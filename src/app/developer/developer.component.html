@@ -1,0 +1,10 @@
+<h1>Profil :</h1>
+<div>
+  <p><span>Nom : </span>{{ model.lastName }}</p>
+  <p><span>Prénom : </span>{{ model.firstName }}</p>
+  <p><span>Age : </span>{{ model.age }}</p>
+  <p><span>Genre : </span>{{ model.gender }}</p>
+  <p><span>Bio : </span>{{ model.bio }}</p>
+</div>
+<h2>Compétences :</h2>
+<app-skill *ngFor="let skill of model.skills" [skill]="skill"></app-skill>
